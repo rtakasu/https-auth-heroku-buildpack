@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-echo "PAT setup"
+echo "Access Token setup"
 exit 0

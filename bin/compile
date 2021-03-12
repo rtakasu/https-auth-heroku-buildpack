@@ -11,13 +11,15 @@ then
 
 elif [ "$token" == "" ];
 then
-	echo "-----> No Personal Access Token found"
+	echo "-----> No Access Token found"
 
 else
-	echo "-----> Running Personal Access setup"
+	echo "-----> Running Access Token setup"
 
   echo "[url \"https://$user:$token@github.com/\"]" >> "$HOME/.gitconfig"
   echo "  insteadOf = ssh://github.com/" >> "$HOME/.gitconfig"
+
+	echo "-----> Access Token setup finished"
 
 	exit 0
 fi
