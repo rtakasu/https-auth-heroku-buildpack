@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+if [ "$PAT" != "" ]; then
+	echo "-----> Running Personal Access setup"
+
+  echo "[url \"https://$USER:$PAT@github.com/\"]" >> "$HOME/.gitconfig"
+  echo "  insteadOf = ssh://github.com/" >> "$HOME/.gitconfig"
+
+	exit 0
+else
+	echo "-----> No Personal Access Token found"
+fi

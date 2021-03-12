@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo "PAT setup"
+exit 0
